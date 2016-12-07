@@ -1,19 +1,20 @@
 package com.ononeleg.dao;
 
+import com.ononeleg.beans.Offer;
 import com.ononeleg.beans.Request;
-import java.util.List;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.List;
 
 /**
  * Created by ilya on 07/12/2016.
  */
-public interface RequestRepository extends MongoRepository<Request, String> {
+public interface OfferRepository extends MongoRepository<Request, String> {
 
     //gives the request by the requested name
-    public Request findByName(String name);
+    public Offer findByContent(String content);
     //gives the list by the views count
-    public List<Request> findByViews(long views);
+    public List<Offer> findByViewCount(long viewCount);
 
 
 

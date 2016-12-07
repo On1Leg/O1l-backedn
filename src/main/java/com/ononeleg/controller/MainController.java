@@ -17,7 +17,7 @@ public class MainController {
 
     @RequestMapping("/test")
     public Response test(@RequestParam(value="name", defaultValue="00TestResponse") String name) {
-        return new Response("1",name,"Shoes");
+        return new Response(name,"Shoes");
     }
         // tester
 

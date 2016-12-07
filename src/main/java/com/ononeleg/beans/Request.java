@@ -12,18 +12,18 @@ public class Request {
     private  long id;
     private final String name;
     private final String content;
-    private final String views;
+    private final long views;
     private final int amount;
 
 
-    public Request(String name, String content, String views, int amount) {
+    public Request(String name, String content, long views, int amount) {
         this.name = name;
         this.content = content;
         this.views = views;
         this.amount = amount;
     }
 
-    public String getViews() {
+    public long getViews() {
         return views;
     }
 
