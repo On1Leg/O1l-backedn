@@ -15,8 +15,8 @@ public class MainController {
 
     private static final String template = "Hello, %s!";
 
-    @RequestMapping("/greeting")
-    public Response greeting(@RequestParam(value="name", defaultValue="00TestResponse") String name) {
+    @RequestMapping("/test")
+    public Response test(@RequestParam(value="name", defaultValue="00TestResponse") String name) {
         return new Response("1",name,"Shoes");
     }
         // tester
