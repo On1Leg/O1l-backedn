@@ -41,4 +41,16 @@ public class MainService {
     public void addOffer(Offer offer) {
         offerRepository.save(offer);
     }
+
+    public void deleteOffer(String id) {
+        offerRepository.delete(id);
+    }
+
+    public void deleteAll(){
+        offerRepository.deleteAll();
+    }
+    public void saveAll(List<Offer> offers){
+        offerRepository.save(offers);
+    }
+
 }

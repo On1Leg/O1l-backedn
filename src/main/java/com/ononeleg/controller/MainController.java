@@ -42,6 +42,12 @@ public class MainController {
     public void addOffer(Offer offer){
         mainService.addOffer(offer);
     }
+    @RequestMapping(value = "/offers", method=RequestMethod.DELETE)
+    @ResponseBody
+    public void deleteOffer(String id){
+        mainService.deleteOffer(id);
+    }
+
 
 
 
