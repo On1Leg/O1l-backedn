@@ -1,5 +1,7 @@
 package com.ononeleg.beans;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Date;
 
 /**
@@ -7,12 +9,15 @@ import java.util.Date;
  */
 public class Offer {
 
+    @Id
+    private String id;
     private User user;
     private String content;
     private double price;
     private View view;
     private Date date;
     private long viewCount;
+
 
 
 }

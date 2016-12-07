@@ -9,14 +9,12 @@ import java.util.List;
 /**
  * Created by ilya on 07/12/2016.
  */
-public interface OfferRepository extends MongoRepository<Request, String> {
+public interface OfferRepository extends MongoRepository<Offer, String> {
 
     //gives the request by the requested name
     public Offer findByContent(String content);
     //gives the list by the views count
     public List<Offer> findByViewCount(long viewCount);
-
-
 
 
 }

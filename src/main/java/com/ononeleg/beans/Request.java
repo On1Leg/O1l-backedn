@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 public class Request {
 
     @Id
-    private  long id;
+    private String id;
     private final String name;
     private final String content;
     private final long views;
@@ -27,7 +27,7 @@ public class Request {
         return views;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
