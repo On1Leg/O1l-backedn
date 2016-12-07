@@ -9,4 +9,5 @@ public class OnonelegApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OnonelegApplication.class, args);
 	}
+
 }
